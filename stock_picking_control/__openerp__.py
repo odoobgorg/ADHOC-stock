@@ -20,32 +20,26 @@
 ##############################################################################
 {
     'name': 'Stock Picking Control',
-    'version': '9.0.1.0.0',
+    'version': '9.0.1.1.0',
     'category': 'Warehouse Management',
     'sequence': 14,
     'summary': '',
-    'description': '''
-Stock Picking Control
-=====================
-Block edition of out picking
-    ''',
-    'author': 'ADHOC SA',
     'website': 'www.adhoc.com.ar',
     'license': 'AGPL-3',
     'images': [
     ],
     'depends': [
-        'stock',
+        'stock_voucher',
     ],
     'data': [
+        'security/security.xml',
         'view/stock_view.xml',
-        'view/company_view.xml',
     ],
     'demo': [
     ],
     'test': [
     ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
     'application': False,
 }
